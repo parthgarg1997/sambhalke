@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.parth.sabhalke.MainActivity$PlaceholderFragment"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:id="@+id/above_container"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:background="@android:color/holo_blue_light"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="To take"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light">
+
+            <TextView
+                android:text="To Give"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/To_give"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/To_give_num"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light">
+
+            <TextView
+                android:text="Balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Balance"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:text="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Balance_num"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendList" />
+
+</LinearLayout>
